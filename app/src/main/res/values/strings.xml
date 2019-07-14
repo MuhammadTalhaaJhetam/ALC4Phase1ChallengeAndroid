@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ALC4_0Phase1ChallengeAndroid</string>
+    <string name="main_header">ALC 4 PHASE 1</string>
+    <string name="welcomeHeader">Welcome to ALC 4.0</string>
+    <string name="aboutALC">ABOUT ALC</string>
+    <string name="myProfile">MY PROFILE</string>
+    <string name="myURL">https://andela.com/alc/</string>
+    <string name="my_name">Muhammad Talhaa Jhetam</string>
+    <string name="track">Track: Android</string>
+    <string name="country">Country: South Africa</string>
+    <string name="email">Email: mtjhetam@gmail.com</string>
+    <string name="phoneNumber">Phone Number: 0747083086</string>
+    <string name="slackUsername">Slack Username: mtjhetam </string>
+</resources>

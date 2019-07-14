@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutALC">
+
+    <WebView
+        android:id="@+id/webView_myWebView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fitsSystemWindows="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_about">
+
+    </WebView>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/webView_myWebView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton_aboutBack"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/toolbar_about"
+        android:layout_alignBottom="@+id/toolbar_about"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:tint="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_about"
+        app:layout_constraintStart_toStartOf="@+id/toolbar_about"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_about"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <TextView
+        android:id="@+id/textView_aboutHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/toolbar_about"
+        android:layout_alignEnd="@+id/toolbar_about"
+        android:layout_alignBottom="@+id/toolbar_about"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toEndOf="@+id/imageButton_aboutBack"
+        android:text="@string/aboutALC"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_about"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar_about"
+
+        app:layout_constraintStart_toStartOf="@+id/toolbar_about"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_about" />
+</android.support.constraint.ConstraintLayout>
